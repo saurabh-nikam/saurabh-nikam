@@ -1,4 +1,4 @@
-#### Hi there 👋  <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I am #Saurabh Nikam
+#### Hi there <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Hi.gif" width="29px"> I am  Saurabh Nikam
 
 
 
@@ -29,10 +29,8 @@ I am a Software Engineer and an Open Source enthusiast having a keen interest in
 * Technical Lead at [Minerva, The Technical Forum of IGDTUW](https://github.com/Minerva-2020) - Heading a team of 4 associate web developers along with 2 other co-Leads for managing the [Minerva website](https://minerva-igdtuw.herokuapp.com/) -->
 
 
-Data Structures and Algorithms in C++ 
+- Data Structures and Algorithms in C++ 
 
-<!-- - 🔭 I’m currently sde intern @[kpit] technologies ltd() -->
-- 
 - 🌱 I’m currently learning dsa,djnago,react,Javascript
 
 - ⚡ Good at: dsa,C++
@@ -56,7 +54,7 @@ Data Structures and Algorithms in C++
 
 ![Vani's github contribution graph](https://activity-graph.herokuapp.com/graph?username=vanichitkara&bg_color=000000&color=FFFFFF&line=FFFFFF&point=00FF00)
 <!-- -->
-
+<!-- 
 Here are some ideas to get you started:
 
 - 🔭 I’m currently working on ...
@@ -68,4 +66,4 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
+ -->
