@@ -12,7 +12,8 @@ I am a Software Engineer and an Open Source enthusiast having a keen interest in
 <!-- * Google Developer Student Club Lead at [GDSC IGDTUW](https://github.com/dscigdtuw) - One of the 200+ GDSC Leads across India for the academic year of 2021-22
 * Technical Lead at [Minerva, The Technical Forum of IGDTUW](https://github.com/Minerva-2020) - Heading a team of 4 associate web developers along with 2 other co-Leads for managing the [Minerva website](https://minerva-igdtuw.herokuapp.com/) -->
 ### 🚀 Previous Works
-* Summer Intern at [Persistent Systems](https://www.persistent.com/) Domain :Cloud Computing 
+* Ex- Summer Intern at [Persistent Systems](https://www.persistent.com/) Domain :Cloud Computing 
+* Succefully completed the Student Facilator @Google cloud ready program [Qwiklabs Profile click here](https://www.qwiklabs.com/public_profiles/76beb37d-0619-4fbd-beec-880d58b40101)
 * Technical Event lead at geek-i-knack at [Geeks for Geeks](https://www.geeksforgeeks.org/) Campus Head - Pccoe Pune
 
 
