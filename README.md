@@ -20,7 +20,7 @@ I am a Software Engineer and an Open Source enthusiast having a keen interest in
 
 - 🌱 I’m currently learning djnago,react,Javascript
 
-- ⚡ Good at: Data Structures and Algorithms in C++ 
+- ⚡ Good at: Data Structures and Algorithms ( C++ ) 
 
  <!-- Actual text -->
 
