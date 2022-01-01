@@ -8,7 +8,7 @@ I am a Software Engineer and an Open Source enthusiast having a keen interest in
 
 ### 💻 I’m currently working as
 
-* SDE Intern at [KPIT](https://www.kpit.com/) 
+* Software Development Engineer Intern at [KPIT](https://www.kpit.com/) 
 <!-- * Google Developer Student Club Lead at [GDSC IGDTUW](https://github.com/dscigdtuw) - One of the 200+ GDSC Leads across India for the academic year of 2021-22
 * Technical Lead at [Minerva, The Technical Forum of IGDTUW](https://github.com/Minerva-2020) - Heading a team of 4 associate web developers along with 2 other co-Leads for managing the [Minerva website](https://minerva-igdtuw.herokuapp.com/) -->
 ### 🚀 Previous Works
