@@ -4,7 +4,7 @@
 
 ### ✨ About Me
 
-I am a Software Engineer and an Open Source enthusiast having a keen interest in Cloud/web dev. and Technical Stuff.
+I am a Software Engineer and an Open Source enthusiast having a keen interest in Full stack web development ,Mobile development.
 
 ### 💻 I’m currently working as
 
