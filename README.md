@@ -32,7 +32,7 @@ I am a Software Engineer and an Open Source enthusiast having a keen interest in
 
 ### 📫 How to reach out to me:
 <p>
-<a target="_blank"href="https://twitter.com/sidnikam9"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a target="_blank"href="https://twitter.com/SaurabhNikam_"><img src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a target="_blank"href="https://www.linkedin.com/in/saurabh-nikam/"><img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <!-- <a target="_blank"href="http://vanichitkara.wordpress.com/"><img src="https://img.shields.io/badge/wordpress-%231DA1F2.svg?&style=for-the-badge&logo=wordpress&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a target="_blank"href="https://www.polywork.com/vanichitkara#/"><img src="https://img.shields.io/badge/polywork-%230077B5.svg?&style=for-the-badge&logo=polywork&logoColor=white" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
