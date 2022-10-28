@@ -4,5 +4,5 @@
 
 ### 💻 I’m  working as
 
-*  Software Development Engineer @ [BIGBINARY](https://www.bigbinary.com/) 
+*  Software Development Engineer  
 
