@@ -4,5 +4,5 @@
 
 ### 💻 I’m  working as
 
-*  Software Development Engineer  
+*  Software Development Engineer  | ruby on rails | Golang and kubernetes Developer | Java Spring Backend
 
