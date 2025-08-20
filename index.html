@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Nikam - Senior Software Development Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #555;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            padding: 8px 15px;
+            border-radius: 25px;
+            background: rgba(102, 126, 234, 0.1);
+        }
+
+        .contact-item:hover {
+            transform: translateY(-3px);
+            background: rgba(102, 126, 234, 0.2);
+            color: #667eea;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        /* Experience Section */
+        .experience-item {
+            border-left: 3px solid #667eea;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #667eea;
+        }
+
+        .job-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .duration {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .job-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .job-description li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .job-description li::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+
+        /* Projects Section */
+        .project-item {
+            background: rgba(102, 126, 234, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+        }
+
+        .project-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .project-tech {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        /* Education & Achievements */
+        .education-item, .achievement-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 10px;
+            border-left: 3px solid #667eea;
+        }
+
+        .achievement-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .achievement-icon {
+            color: #667eea;
+            font-size: 1.2em;
+            margin-top: 3px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .header {
+                padding: 25px;
+            }
+
+            .section {
+                padding: 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.1s; }
+        .section:nth-child(2) { animation-delay: 0.2s; }
+        .section:nth-child(3) { animation-delay: 0.3s; }
+        .section:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-img">
+                <i class="fas fa-user"></i>
+            </div>
+            <h1>Saurabh Nikam</h1>
+            <p class="subtitle">Senior Software Development Engineer</p>
+            <div class="contact-info">
+                <a href="tel:+917448180515" class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    +91 7448180515
+                </a>
+                <a href="mailto:saurabhnikam.sn@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    saurabhnikam.sn@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/saurabh-nikam" target="_blank" class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/saurabh-nikam" target="_blank" class="contact-item">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <!-- Skills Section -->
+            <section class="section full-width">
+                <h2><i class="fas fa-code"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Go (Golang)</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Spring Boot</span>
+                            <span class="skill-tag">Spring Core</span>
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Ruby on Rails</span>
+                            <span class="skill-tag">Django</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps & Cloud</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section class="section full-width">
+                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-title">Senior Software Engineer</div>
+                    <div class="company">GoldenRay.Cloud</div>
+                    <div class="duration">Nov 2024 – Present | Ahmedabad, India</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Building and integrating essential Kubernetes components (API server, controller manager, scheduler, kubelet) for the GoldenRay.Cloud platform</li>
+                            <li>Designing custom orchestration features including CRDs, workflow engines, and service mesh integrations</li>
+                            <li>Developing Kubernetes orchestration from ground-up with comprehensive technical documentation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Programmer Analyst</div>
+                    <div class="company">The Hartford Insurance Group</div>
+                    <div class="duration">Nov 2022 – Nov 2024 (2 years) | Pune, India</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Resolved security vulnerabilities in Java, Go, and Node.js applications, improving performance and security</li>
+                            <li>Managed complex security issues including XSS vulnerabilities with robust validation and error-handling</li>
+                            <li>Provided critical production support for insurance applications with real-time data modifications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Software Development Engineer I</div>
+                    <div class="company">BigBinary Solutions</div>
+                    <div class="duration">June 2022 – Dec 2022 (7 months) | Pune, India</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed full-stack applications using Go, Ruby on Rails, React.js, and Kubernetes</li>
+                            <li>Implemented log collection functionalities using Python, GCP, and AWS S3, reducing retrieval time from 5 minutes to 5 seconds</li>
+                            <li>Designed volume repair functionality in CNS to prevent pod downtime and ensure continuous availability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-title">Software Development Engineer Intern</div>
+                    <div class="company">KPIT Technologies</div>
+                    <div class="duration">Jan 2021 – July 2022 (8 months) | Pune, India</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed features for EdTech learning platforms using Django framework</li>
+                            <li>Created RESTful APIs to improve employee training efficiency with competency framework</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section class="section">
+                <h2><i class="fas fa-project-diagram"></i> Key Projects</h2>
+                
+                <div class="project-item">
+                    <div class="project-title">SmartEdx - Training on Demand</div>
+                    <div class="project-tech">Go, Java Spring Boot, MySQL, Python</div>
+                    <p>Developed a training portal for employees with attendance tracking and cloud deployment on Google Cloud Platform.</p>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title">TruTime - Realtime Attendance System</div>
+                    <div class="project-tech">Go, REST APIs, Bootstrap, Python</div>
+                    <p>Designed attendance transaction system using GORM with CRUD operations and object-oriented programming practices.</p>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section class="section">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                
+                <div class="education-item">
+                    <div class="job-title">Bachelor's of Engineering in Information Technology</div>
+                    <div class="company">Pimpri Chinchwad College of Engineering, University of Pune</div>
+                    <div class="duration">July 2018 - June 2022</div>
+                    <p><strong>CGPA: 9.3/10</strong></p>
+                </div>
+
+                <div class="education-item">
+                    <div class="job-title">CBSE Higher Secondary (PCM + Computer Science)</div>
+                    <div class="company">Jawahar Navodaya Vidyalaya, Nasik</div>
+                    <div class="duration">August 2015 – May 2017</div>
+                    <p><strong>CGPA: 9.8/10</strong></p>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section class="section full-width">
+                <h2><i class="fas fa-trophy"></i> Achievements & Extracurricular</h2>
+                
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                    <div>
+                        <strong>500+ Data Structure Problems Solved</strong> on platforms like Codeforces, AtCoder, HackerRank
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-star"></i></div>
+                    <div>
+                        <strong>5★ Rating on HackerRank</strong> (Problem-Solving) and 4★ (max) on CodeChef and LeetCode
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <div>
+                        <strong>Team Rank 14 (India)</strong> in IEEE Xtream 15 Programming Contest out of 8250 participants (Top 1 percentile)
+                    </div>
+                </div>
+
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                    <div>
+                        <strong>Scholarship Programs:</strong> Selected in AWS ML/Cloud Ready, CSRL Super 30, JNNSMEE-2016 (Finalist) - Top 1 percentile
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        // Add smooth scrolling and interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effects to sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-8px)';
+                    this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.15)';
+                });
+                
+                section.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.1)';
+                });
+            });
+
+            // Add click effect to contact items
+            const contactItems = document.querySelectorAll('.contact-item');
+            contactItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    this.style.transform = 'scale(0.95)';
+                    setTimeout(() => {
+                        this.style.transform = 'translateY(-3px)';
+                    }, 100);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
